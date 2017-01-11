@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="page-header">
+    <h1> Edit Store</h1>
+</div>
+
+<div class="form-size">
+    <form method="POST">
+        <div class="form-group">
+            <label for="name">Store</label>
+            <input type="text" class="form-control" id="name" placeholder="Store Name" name="name" value="{{ store.name }}"
+        </div>
+        <div>
+            <label for="url_prefix">URL Prefix</label>
+            <input type="text" placeholder="http://..." id="url_prefix" class="form-control" name="url_prefix" value="{{ store.url_prefix }}" area-describedby="storeURLPrefixHelp">
+            <span class="help-block" id="storeURLPrefixHelp">Your URL should begin in this format for all the items in this store</span>
+        </div>
+         <div>
+            <label for="tag_name">Tag Name</label>
+            <input type="text" placeholder="div" value="div" id="tag_name" class="form-control" name="tag_name" value="{{ store.tag_name }}" area-describedby="storeTagNameHelp">
+            <span class="help-block" id="storeTagNameHelp">What tag contains the price for the item in the web page. Usually<code>span</code></span>
+        </div>
+            <div>
+            <label for="query">Query</label>
+            <input type="text" placeholder='{"class" : "buy1 ats-prodBuy-buyBoxSec"}' value='{{store.query | tojson }}' id="query" class="form-control" name="query" area-describedby="storeQueryHelp">
+            <span class="help-block" id="storeQueryHelp">What json query would we have to do to get the item price? Remember to use double quotes for the query string</span>
+        </div>
+        <button type="submit" class="btn btn-warning">Update</button>
+
+    </form>
+
+</div>
+
+{% endblock %}
