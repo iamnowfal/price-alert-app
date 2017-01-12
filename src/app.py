@@ -3,6 +3,8 @@ from flask import render_template
 
 from src.common.database import Database
 
+
+
 app = Flask(__name__)
 app.config.from_object('config') #config class i imported as attributes to the app class here.
 app.secret_key= "password"
