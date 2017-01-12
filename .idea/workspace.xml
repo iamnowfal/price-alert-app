@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="af3f0ffa-9ac9-462b-800d-8c70bd774fcb" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/runtime.txt" afterPath="$PROJECT_DIR$/runtime.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uwsgi.ini" afterPath="$PROJECT_DIR$/uwsgi.ini" />
     </list>
     <ignored path="Price of Ps4 Game.iws" />
     <ignored path=".idea/workspace.xml" />
