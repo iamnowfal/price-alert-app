@@ -5,8 +5,9 @@ from src.common.database import Database
 
 
 
+
 app = Flask(__name__)
-app.config.from_object('config') #config class i imported as attributes to the app class here.
+app.config.from_object('src.config') #config class i imported as attributes to the app class here.
 app.secret_key= "password"
 
 @app.before_first_request
