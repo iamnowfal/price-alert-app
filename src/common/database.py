@@ -12,7 +12,8 @@ class Database(object):
     @staticmethod
     def initialize(): #init(self) method is used ony in the context of creating objects with their own properties. for eg; different uri for dbs
         client = pymongo.MongoClient(Database.URI)
-        Database.DATABASE = client['fullstack']
+        #Database.DATABASE = client['fullstack']
+        Database.DATABASE = client.get_default_database()
 
     @staticmethod
     def insert(collection, data):
