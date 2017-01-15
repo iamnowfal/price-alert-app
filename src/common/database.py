@@ -5,7 +5,7 @@ import pymongo
 class Database(object):
     #URI = "mongodb://localhost:27017"
     #URI = "mongodb://<dbuser>:<dbpassword>@ds163698.mlab.com:63698/heroku_gxq89rk8"
-    URI = os.environ.get("MONGOLAB_URI") # this will save the details in the heroku environment variables and thereby not visible for github users
+    URI = os.environ.get("MONGODB_URI") # this will save the details in the heroku environment variables and thereby not visible for github users
     DATABASE = None
 
 
